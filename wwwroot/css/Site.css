@@ -1,0 +1,189 @@
+/* ---------------------------------
+BODY - MAIN
+----------------------------------- */
+body {
+    font-family: 'Alef' !important; /*custom font-family for hebrew characters*/
+	text-align: center; /*for the sake of grids*/
+	direction: rtl; /*Hebrew is RTL (right-to-left) language*/
+}
+
+/* ---------------------------------
+RESPONSIVE-IMG
+(height is 100% relative to the navbar/navbar-brand class
+width is adujsted automatically to height)
+----------------------------------- */
+.navbar-brand >img{
+	height: 100%;
+	width: auto;
+}
+.top-image{
+	
+	width: 100%;
+	height: auto;
+}
+
+
+/*---------------------------------
+INFO SECTION - START
+-----------------------------------*/
+.info {
+	/**/
+	margin-top: -20px; /*navbar*/
+	padding-top: 200px; /*background padding, just like padding text to stretch the div box, the image height streches too*/
+	padding-bottom: 50px;
+
+	font-family: Courier New;
+	text-align: center;
+	color: #f8f8f8;
+
+	/*--*/
+	background: url('../images/after_navbar.jpg') no-repeat center center;
+	background-size: cover;
+}
+.info-meet {
+	/**/
+}
+.info-meet   >h3{
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.seperate-line {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom:  1px solid rgba(0,0,0, 0.2);
+}
+
+.social-network-text {
+	text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+@media (max-width: 767px){
+	ul.social-network-button > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+
+	}
+	ul.social-network-button > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.seperate-line{
+		width: 100%;
+	}
+}
+
+/*---------------------------------
+INFO SECTION - END
+-----------------------------------*/
+
+
+/*---------------------------------
+GALLERY SECTION - START
+-----------------------------------*/
+.gallery {
+	padding: 50px 0;
+    background-color: #f8f8f8;
+}
+@media (max-width: 768px) {
+    .col-sm-3 > .img-description {
+        margin-bottom: 20px;
+    }
+}
+
+.img-description {
+	background-color: inherit;
+
+	border: 1px solid;
+	border-radius: 3px;
+	border-color: #F5F5F5;
+}
+.img-description-img >img{
+	max-width: 100%;
+	border-bottom: 2px solid;
+	border-color: #8D8C8C;
+}
+.img-description-text{
+	width: 300px; /*gallery fixed-size images*/
+    max-width: 100%;
+
+    display: block; /*the opposite on inline*/
+	margin: auto; /*center elemnts*/
+
+	background-color: #E8E8E8; /*--*/
+}
+.img-description-text > p, h4{
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+/*---------------------------------
+GALLERY SECTION - END
+-----------------------------------*/
+
+/*---------------------------------
+RECOMMDS SECTION - START
+-----------------------------------*/
+.recommds {
+	padding: 50px 0;
+}
+.media {
+	direction: ltr;
+}
+.media p{
+	direction: rtl;
+}
+/*---------------------------------
+RECOMMDS SECTION - END
+-----------------------------------*/
+
+
+/*---------------------------------
+CONTACT SECTION - START
+-----------------------------------*/
+.contact {
+	padding: 50px 0;
+	background-color: #f8f8f8;
+}
+@media (max-width: 768px) {
+	#text-adjust-button{
+		text-align: center;
+
+	}
+}
+
+/*---------------------------------
+CONTACT SECTION - END
+-----------------------------------*/
+
+
+/*---------------------------------
+FOOTER SECTION - START
+-----------------------------------*/
+.footer {
+	padding: 50px 0;
+}
+/*---------------------------------
+FOOTER SECTION - END
+-----------------------------------*/
+
+
+/* ---------------------------------
+BACKGROUND-COLORS
+()
+----------------------------------- */
+.bg-faded {
+	background-color: #ECECEC;
+}
+.bg-faded-light{
+	background-color: #F6F6F6;
+}
+
+
+/* ---------------------------------
+ELSE
+()
+----------------------------------- */
+.logo-side {
+	font-size: 100px;
+}
